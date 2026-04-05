@@ -4,5 +4,5 @@ metadata:
   name: cluster-reader
 rules:
 - apiGroups: [""] # The empty string "" refers to the core Kubernetes API group
-  resources: ["pods", "nodes", "namespaces", "services", "deployments", "replicasets", "pods/logs", "pods/exec"]
-  verbs: ["all"]
+  resources: ["pods", "nodes", "namespaces", "services", "pods/logs", "pods/exec"]
+  verbs: ["*"]

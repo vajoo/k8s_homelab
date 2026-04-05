@@ -5,4 +5,4 @@ metadata:
 rules:
 - apiGroups: [""] # The empty string "" refers to the core Kubernetes API group
   resources: ["pods", "nodes", "namespaces", "services", "deployments", "replicasets", "pods/logs", "pods/exec"]
-  verbs: ["get","list","watch","delete","update","patch","create","describe","logs","exec","apply"]
+  verbs: ["all"]

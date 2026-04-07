@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 
 app = FastAPI()
-router = APIRouter("/api")
+router = APIRouter(prefix="/api")
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,3 +16,6 @@ app.add_middleware(
 @router.get("/")
 def read_root():
     return {"message": "Hello, World!", "hostname": os.getenv("HOSTNAME")}
+
+
+app.include_router(router)

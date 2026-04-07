@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    fetch("http://localhost:8000")
+    fetch("/api")
     .then(response => response.json())
     .then(data => {
         document.getElementById("hostname").textContent = data.hostname;

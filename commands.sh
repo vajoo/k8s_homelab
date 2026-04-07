@@ -14,3 +14,8 @@ docker pull vajo/k8s-demo-frontend:latest
 
 kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/base/cluster_reader.yaml
 kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/base/cluster_reader_binding.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/api.yaml
+kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/api_service.yaml
+kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/frontend.yaml
+kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/frontend_servce.yaml

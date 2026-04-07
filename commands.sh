@@ -19,3 +19,7 @@ kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/de
 kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/api_service.yaml
 kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/frontend.yaml
 kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/frontend_servce.yaml
+
+# ingress installieren
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/demo-project/ingress.yaml

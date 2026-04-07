@@ -4,6 +4,8 @@ import os
 
 app = FastAPI()
 
+app.router.prefix = "/api"
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],

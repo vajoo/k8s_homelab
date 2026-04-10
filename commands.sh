@@ -12,6 +12,10 @@ docker push vajo/k8s-demo-frontend:latest
 docker pull vajo/k8s-demo-api:latest
 docker pull vajo/k8s-demo-frontend:latest
 
+# frontend rollout restart - wenn keine yaml config sondern nur ein container image geändert wurde
+kubectl rollout restart deployment demo-frontend
+kubectl rollout status deployment demo-frontend
+
 kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/base/cluster_reader.yaml
 kubectl apply -f https://raw.githubusercontent.com/vajoo/k8s_homelab/main/k8s/base/cluster_reader_binding.yaml
 

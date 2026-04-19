@@ -3,11 +3,7 @@ kind: Deployment
 metadata:
   name: demo-api
 spec:
-<<<<<<< HEAD
   replicas: 50
-=======
-  replicas: 4
->>>>>>> a9abc94e6c9e3190709eb612884720bdebfa9cf1
   selector:
     matchLabels:
       app: demo-api
